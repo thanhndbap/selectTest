@@ -54,21 +54,40 @@ header .newletter {
   font-weight: bold;
 }
 
-header .newletter a, header .newletter i {
+header .newletter > * {
   color: white;
 }
 
 
 /* FEATURED */
 section.featured {
+  background-image: url('../images/top_font.jpg');
   width: 100%;
   height: 894px;
   overflow: hidden;
   position: relative;
   z-index: 20;
+  height: 1300px;
 }
 
-section.featured .bg-f {
+section.featured .container-fix {
+  padding: 5% 0;
+}
+
+section.featured .fix-content {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+section.featured  .fix-big-label {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+/* section.featured .bg-f {
   background-image: url('../images/featured.png');
   position: absolute;
   top: 0;
@@ -79,42 +98,44 @@ section.featured .bg-f {
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
-}
+} */
 
 section.featured h1 {
   font-size: 82px;
   color: white;
   line-height: 90px;
+  margin: 7% 0 10% 0px;
 }
 
 /* FEATURED */
 
-section.news {
+section.featured {
   padding: 150px 0;
   width: 100%;
-  background-image: url('../images/bg-news.jpg');
+  /* background-image: url('../images/bg-news.jpg'); */
   position: relative;
   top: -92px;
   z-index: 10;
+  background-position: bottom;
 }
 
-section.news h2 {
+section.featured h2 {
   font-size: 50px;
   color: #0dbe84;
 }
 
-section.news h2 span {
+section.featured h2 span {
   padding-left: 30px;
   font-size: 40px;
   color: #0dbe84;
 }
 
-section.news ul {
+section.featured ul {
   display: flex;
   flex-flow: column nowrap;
 }
 
-section.news ul li {
+section.featured ul li {
   padding: 10px 10px 30px 115px;
   position: relative;
   align-items: center;
@@ -122,7 +143,7 @@ section.news ul li {
   margin-top: 30px;
 }
 
-section.news ul li:before {
+section.featured ul li:before {
   content: 'NEWS';
   width: 90px;
   padding: 7px;
@@ -134,6 +155,106 @@ section.news ul li:before {
   text-align: center;
 }
 
-section.news ul li a {
+section.featured ul li a {
   margin-left: 40px;
+}
+
+/* SERVICES */
+
+section.services {
+  position: relative;
+  top: -100px;
+  height: 530px;
+}
+
+section.services .item-ser {
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+section.services .item-ser img {
+  width: 100%;
+}
+
+section.recruit {
+  position: relative;
+  height: 894px;
+  overflow: hidden;
+  z-index: 20;
+}
+/* 
+section.recruit::before {
+  content: "";
+  transform: skewX(-35deg); 
+  -ms-transform: skewX(-35deg); 
+  -webkit-transform: skewX(-35deg); 
+  background-image: url('../images/bg-3.png'); 
+  background-repeat: no-repeat; 
+  background-position: top left; 
+  
+  position: absolute;
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  width: 2000px;
+  height: 2000px; 
+}
+*/
+
+section.recruit .bg-r {
+  background-image: url('../images/bg-3.png');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+section.recruit .head-recruit {
+  position: relative;
+  min-height: 300px;
+  line-height: 40px;
+}
+
+section.recruit .bussiness {
+  line-height: 32px;
+  padding-top: 200px;
+}
+
+section.recruit .bussiness h2 {
+  font-size: 36px;
+  color: white;
+}
+
+section.recruit .bussiness h2 span {
+  font-size: 20px;
+  color: white;
+  padding-left: 30px;
+}
+
+section.recruit .bussiness p {
+  color:  white;
+  padding-top: 45px;
+}
+
+section.recruit ul {
+  padding-top: 45px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section.recruit ul li {
+  margin-right: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  background-image: url('../images/bg-footer.jpg');
+  min-height: 494px;
 }
