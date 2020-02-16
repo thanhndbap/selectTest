@@ -1,0 +1,65 @@
+/*
+  Elements In Select Pages
+  - Home Page
+  - 
+*/
+
+/* Colors variables
+  green: #0dbe84;
+  sky: #02c9c2;
+  green-gradient: #45ea6e, #02c9c2;
+*/
+
+html, body {
+  font-family: 'Arial';
+  font-size: 18px;
+  color: black;
+}
+
+.container {
+  max-width: 1300px; 
+}
+
+a, span, p, strong, input {
+  color: black;
+}
+
+a, span, p, strong, input:hover {
+  text-decoration: none;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+.font-xs {
+  font-size: 18px;
+}
+
+.font-sm {
+  font-size: 20px;
+}
+
+.font-xl {
+  font-size: 22px;
+}
+
+.color-green {
+  color: #0dbe84;
+}
+
+.bg-gradient-green {
+  background-image: linear-gradient(to right, #00ffab, #02c9c2)
+}
+
+.bg-cover {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.wrapper-select-pages {
+  width: 100%;
+}

@@ -1,0 +1,139 @@
+/*
+* ELEMENT IN PAGE
+  - Header
+  - Featured
+*/
+
+.front-top-page {
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 81px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0.9;
+  border-bottom: 2px solid #0dbe84;
+  z-index: 999;
+}
+
+header .wraper-menu-main {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header .wraper-menu-main .menu-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+header .wraper-menu-main .menu-main li {
+  padding: 0 10px;
+  display: inline;
+}
+
+header .wraper-menu-main .menu-main li a {
+  display: inline-block;
+}
+
+header .newletter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+header .newletter a, header .newletter i {
+  color: white;
+}
+
+
+/* FEATURED */
+section.featured {
+  width: 100%;
+  height: 894px;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+}
+
+section.featured .bg-f {
+  background-image: url('../images/featured.png');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+section.featured h1 {
+  font-size: 82px;
+  color: white;
+  line-height: 90px;
+}
+
+/* FEATURED */
+
+section.news {
+  padding: 150px 0;
+  width: 100%;
+  background-image: url('../images/bg-news.jpg');
+  position: relative;
+  top: -92px;
+  z-index: 10;
+}
+
+section.news h2 {
+  font-size: 50px;
+  color: #0dbe84;
+}
+
+section.news h2 span {
+  padding-left: 30px;
+  font-size: 40px;
+  color: #0dbe84;
+}
+
+section.news ul {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+section.news ul li {
+  padding: 10px 10px 30px 115px;
+  position: relative;
+  align-items: center;
+  border-bottom: 2px dotted #7d7d7d;
+  margin-top: 30px;
+}
+
+section.news ul li:before {
+  content: 'NEWS';
+  width: 90px;
+  padding: 7px;
+  background: black;
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+section.news ul li a {
+  margin-left: 40px;
+}
