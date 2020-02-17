@@ -282,6 +282,35 @@ section.recruit ul li {
 footer {
   background-image: url('../images/bg-footer.jpg');
   min-height: 494px;
+  padding-top: 150px;
+  text-align: right;
+  position: relative
+}
+
+footer {
+  justify-content: flex-end;
+}
+
+footer p, footer a {
+  color:  white;
+}
+
+footer ul {
+  padding-top: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+footer ul li {
+  padding: 10px 15px;
+}
+
+.cpr {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
 }
 
 /* MAIN */
@@ -325,4 +354,37 @@ main.content-wrapper {
 /* CONTACT SELECT BUSINESS */
 .contact-bussiness-page-wrapper .spacing {
   margin: 15px 0;
+}
+
+.contact-bussiness-page-wrapper .clear-bg {
+  padding-top: 0;
+  background: none;
+}
+
+
+/* RECRUIT SELECT */
+
+.recruit-page-wrapper .submit a {
+  margin-top: 30px;
+  min-width: 250px;
+}
+
+.recruit-page-wrapper .submit a span {
+  color: white;
+}
+
+.recruit-page-wrapper .submit a svg {
+  color: white;
+  margin-right: 5px;
+  line-height: 30px
+}
+
+/* RESULT PAGE */
+
+.result-page-wrapper table tr th {
+  text-align: center;
+}
+
+.result-page-wrapper table tr th, .result-page-wrapper table tr td{
+  border-right: 2px solid white;
 }
