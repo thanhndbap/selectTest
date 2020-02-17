@@ -8,6 +8,7 @@
   green: #0dbe84;
   sky: #02c9c2;
   green-gradient: #45ea6e, #02c9c2;
+  gray: #eeeeee;
 */
 
 html, body {
@@ -106,6 +107,13 @@ img {
 
 /* BUTTON */
 
+.btn-green {
+  padding: 7px;
+  color: white;
+  background: #0dbe84;
+  display: inline-block;
+}
+
 .btn-custom {
   display: inline-block;
   padding: 15px 45px;
@@ -113,3 +121,76 @@ img {
   color: #3ec6b9;
   border: 1px solid #06e6a3;
 }
+
+.btn-custom-primary {
+  display: inline-block;
+  padding: 15px 45px;
+  color: white;
+  background: linear-gradient(to right, #00ffab, #02c9c2);
+}
+
+.breadcrums ul li > * {
+  margin-right: 10px !important;
+}
+
+.breadcrum {
+  padding: 6px;
+  color: white;
+  background: #0dbe84;
+  display: inline-block;
+}
+
+.label-sm {
+  font-size: 25px;
+  color: #0dbe84;
+}
+
+.title-page {
+  padding: 30px 15px;
+}
+
+.input-custom {
+  background: #eeeeee;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  height: 28px;
+  padding-left: 10px;
+}
+
+.input-custom:focus {
+  background: white;
+}
+
+.panel-a {
+  position: relative;
+  border-bottom: 2px solid #0dbe84;
+  line-height: 40px;
+  padding-left: 30px;
+}
+
+.panel-a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #00ffab, #02c9c2);
+}
+
+.wrapper-gray {
+  background: #f6f6f6;
+  padding: 30px;
+}
+
+.wrapper-gray ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 30px
+}
+
+.wrapper-gray > * {
+  margin-bottom: 20px;
+}
+

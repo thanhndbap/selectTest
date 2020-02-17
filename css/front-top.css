@@ -9,6 +9,10 @@
 }
 
 header {
+  position: relative;
+}
+
+header .header-content {
   width: 100%;
   height: 81px;
   background: white;
@@ -19,6 +23,27 @@ header {
   opacity: 0.9;
   border-bottom: 2px solid #0dbe84;
   z-index: 999;
+}
+
+header .header-bottom {
+  height: 200px;
+  width: 100%;
+  background-image: url('../images/normal-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .header-bottom .title {
+  margin-top: 120px;
+  font-size: 25px;
+  color: white;
+}
+
+header .header-bottom .title span {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
 }
 
 header .wraper-menu-main {
@@ -257,4 +282,47 @@ section.recruit ul li {
 footer {
   background-image: url('../images/bg-footer.jpg');
   min-height: 494px;
+}
+
+/* MAIN */
+
+main.content-wrapper {
+  padding: 30px 0;
+  min-height: 100vh;
+}
+
+
+/* CONTACT */
+
+.contact-page-wrapper .content-contact .item, .contact-select-page-wrapper .content-contact .item{
+  width: 100%;
+  padding: 25px 0px;
+  text-align: left;
+  border-bottom: 2px dotted gray;
+}
+
+.contact-page-wrapper .content-contact .mg10 {
+  margin-bottom: 10px;
+}
+
+.contact-page-wrapper .content-contact .history li {
+  line-height: 30px;
+  list-style-image: url('../images/list-history.png');
+  list-style-position: inside;
+}
+
+/* CONTACT SELECT */
+
+.contact-select-page-wrapper textarea {
+  border: none;
+  background: #eee;
+}
+
+.contact-select-page-wrapper .submit {
+  padding-top: 30px;
+}
+
+/* CONTACT SELECT BUSINESS */
+.contact-bussiness-page-wrapper .spacing {
+  margin: 15px 0;
 }
