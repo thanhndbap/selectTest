@@ -12,9 +12,10 @@
 */
 
 html, body {
-  font-family: 'Arial';
   font-size: 18px;
   color: black;
+  /* font-family: 'Noto Serif JP', serif; */
+  font-family: 'Arial';
 }
 
 .container {
@@ -27,6 +28,7 @@ html, body {
 
 a, span, p, strong, input {
   color: black;
+  line-height: 25px;
 }
 
 a:hover {
