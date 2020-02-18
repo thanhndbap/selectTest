@@ -7,6 +7,7 @@
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -23,19 +24,22 @@
         <div class="header-content">
           <div class="container">
             <div class="row">
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-12">
                 <a href="#">
                   <img src="./images/logo.png" alt="">
                 </a>
+                <span class="open"><i class="fas fa-bars"></i></span>
+                <span class="close hidden"><i class="far fa-window-close"></i></span>
               </div>
-              <div class="col-md-8 wraper-menu-main">
+              <div class="col-md-7  col-xs-12 wraper-menu-main">
                 <ul class=menu-main>
-                  <li><a href="#">会社紹介</a></li>
-                  <li><a href="#">事業内容</a></li>
-                  <li><a href="#">採用情報</a></li>
+                  <li><a href="business-select.html">会社紹介</a></li>
+                  <li><a href="company-select.html">事業内容</a></li>
+                  <li><a href="recruit-select.html">採用情報</a></li>
                 </ul>
+                <a href="#" class="btn-newletter"><i class="far fa-envelope"></i>お問い合わせ</a>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-3">
                 <div class="newletter bg-gradient-green">
                   <i class="far fa-envelope"></i>
                   <a href="#">お問い合わせ</a>
@@ -56,7 +60,7 @@
         <div class="container container-fix fix-content">
           <div class="row">
             <div class="col-md-12">
-              <h2>お知らせ <span>NEWS</span></h2>
+              <h2>お知らせ <span class="font-sans">NEWS</span></h2>
               <ul>
                 <li class="font-sm"><span>2019.10.12</span><a href="#"> ホームページを開設しました。</a></li>
                 <li class="font-sm"><span>2019.10.12</span><a href="#"> ホームページを開設しました。</a></li>
@@ -71,17 +75,17 @@
             <div class="col-md-6 item-ser">
               <img src="images/img-1.jpg" alt="img-1">
               <div class="content-sub">
-                <p>会社概要</p>
-                <p>COMPANY</p>
-                <a href="#" class="btn-sub">a</a>
+                <h4>会社概要</h4>
+                <p class="font-sans">COMPANY</p>
+                <a href="#" class="btn-sub"><i class="fas fa-angle-right"></i></a>
               </div>
             </div>
             <div class="col-md-6 item-ser">
               <img src="images/img-2.jpg" alt="img-2">
               <div class="content-sub">
-                <p>ご挨拶</p>
-                <p>GREETING</p>
-                <a href="#" class="btn-sub">a</a>
+                <h4>ご挨拶</h4>
+                <p class="font-sans">GREETING</p>
+                <a href="#" class="btn-sub"><i class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -94,8 +98,8 @@
             <div class="col-md-12 head-recruit">
               <div class="content-sub">
                 <p>会社概要</p>
-                <p>COMPANY</p>
-                <a href="#" class="btn-sub">a</a>
+                <p class="font-sans">COMPANY</p>
+                <a href="#" class="btn-sub"><i class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -124,26 +128,27 @@
               </div>
               <div class="col-md-12">
                 <ul>
-                  <li><a href="#">トップ</a></li>
-                  <li><a href="#">会社紹介</a></li>
-                  <li><a href="#">ご挨拶</a></li>
-                  <li><a href="#">事業内容</a></li>
-                  <li><a href="#">実績</a></li>
-                  <li><a href="#">採用情報</a></li>
-                  <li><a href="#">お問い合わせ</a></li>
+                  <li><a href="index.html">トップ</a></li>
+                  <li><a href="business-select.html">会社紹介</a></li>
+                  <li><a href="greeting-select.html">ご挨拶</a></li>
+                  <li><a href="company-select.html">事業内容</a></li>
+                  <li><a href="result-select.html">実績</a></li>
+                  <li><a href="recruit-select.html">採用情報</a></li>
+                  <li><a href="contact-select.html">お問い合わせ</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <p class="cpr">Copyright © 2019 株式会社 セレクト All Rights Reserved.</p>
+          <p class="cpr font-sans">Copyright © 2019 株式会社 セレクト All Rights Reserved.</p>
         </footer>
       </section>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="bootstrap.min"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>

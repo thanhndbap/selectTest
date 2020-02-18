@@ -25,6 +25,24 @@ header .header-content {
   z-index: 999;
 }
 
+header .header-content .col-md-2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header .header-content .col-md-2 span, header .header-content .col-md-2 .hidden {
+  display: none;
+}
+
+header .header-content .col-md-2 svg {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 35px;
+  color: #5f5f5f;
+}
+
 header .header-bottom {
   height: 200px;
   width: 100%;
@@ -69,14 +87,24 @@ header .wraper-menu-main .menu-main li a {
   display: inline-block;
 }
 
+header .col-md-3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
 header .newletter {
   width: 100%;
-  height: 100%;
+  height: 77px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  max-width: 200px;
+}
+
+header .wraper-menu-main .btn-newletter {
+  display: none;
 }
 
 header .newletter > * {
@@ -129,6 +157,7 @@ section.featured h2 span {
   padding-left: 30px;
   font-size: 40px;
   color: #0dbe84;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section.featured ul {
@@ -146,6 +175,7 @@ section.featured ul li {
 
 section.featured ul li:before {
   content: 'NEWS';
+  font-family: 'Open Sans', sans-serif;
   width: 90px;
   padding: 7px;
   background: black;
@@ -237,6 +267,7 @@ section.recruit ul {
 
 section.recruit ul li {
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -246,7 +277,8 @@ footer {
   min-height: 494px;
   padding-top: 150px;
   text-align: right;
-  position: relative
+  position: relative;
+  padding-bottom: 60px;
 }
 
 footer {
@@ -273,6 +305,7 @@ footer ul li {
   width: 100%;
   bottom: 10px;
   text-align: center;
+  color: #8e8e8e;
 }
 
 /* MAIN */
@@ -302,6 +335,9 @@ main.content-wrapper {
   list-style-position: inside;
 }
 
+.red {
+  color: red;
+}
 /* CONTACT SELECT */
 
 .contact-select-page-wrapper textarea {
@@ -358,6 +394,14 @@ main.content-wrapper {
   section.featured {
     min-height: 1200px;
   }
+    
+  section.recruit .bg-r {
+    background-image: url('../images/footer-black.jpg');
+  }
+
+  section.recruit .bussiness {
+    padding-top: 0;
+  }
 
   footer {
     min-height: auto;
@@ -382,9 +426,63 @@ main.content-wrapper {
     line-height: 70px;
     margin: 10% 0 0% 0px;
   }
+
+  section.featured h2 {
+    font-size: 40px;
+  }
+
+  footer {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 768px) {
+
+  /* MENU */
+  header .header-content {
+    height: 83px;
+  }
+
+  header .header-content .col-md-2 span {
+    display: block;
+  }
+
+  header .header-content .col-md-3 {
+    display: none;
+  }
+
+  header .wraper-menu-main {
+    position: absolute;
+    left: -100%;
+    top: 83px;
+    padding: 0;
+    flex-flow: column nowrap;
+    background: linear-gradient(to right, #00ffab, #02c9c2);
+    padding: 15px 0;
+  }
+
+  header .wraper-menu-main .menu-main {
+    flex-flow: column nowrap;
+  }
+
+  header .wraper-menu-main .menu-main li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  header .wraper-menu-main .menu-main li a {
+    color: white;
+  }
+
+  header .wraper-menu-main .btn-newletter {
+    display: block;
+    padding: 6px;
+    background: white;
+    max-width: 150px;
+    margin-left: 11px;
+    text-align: center;
+  }
+
   section.featured {
     min-height: 820px;
   }
@@ -397,6 +495,10 @@ main.content-wrapper {
 
   section.featured .fix-content {
     padding: 0 15px;
+  }
+
+  section.featured ul li {
+    padding: 35px 10px 15px 11px;
   }
 }
 
