@@ -212,7 +212,8 @@ section.recruit {
   position: relative;
   overflow: hidden;
   z-index: 20;
-  background: black;
+  bottom: -227px;
+  margin-top: -227px;
 }
 
 section.recruit .bg-r {
@@ -226,6 +227,11 @@ section.recruit .bg-r {
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+}
+
+section.recruit .container-fix {
+  padding-bottom: 60px;
 }
 
 .no-bg {
@@ -273,7 +279,7 @@ section.recruit ul li {
 /* FOOTER */
 
 footer {
-  background-image: url('../images/bg-footer.jpg');
+  background-image: url('../images/footer-black.jpg');
   min-height: 494px;
   padding-top: 150px;
   text-align: right;
@@ -338,6 +344,7 @@ main.content-wrapper {
 .red {
   color: red;
 }
+
 /* CONTACT SELECT */
 
 .contact-select-page-wrapper textarea {
@@ -395,9 +402,9 @@ main.content-wrapper {
     min-height: 1200px;
   }
     
-  section.recruit .bg-r {
+  /* section.recruit .bg-r {
     background-image: url('../images/footer-black.jpg');
-  }
+  } */
 
   section.recruit .bussiness {
     padding-top: 0;
