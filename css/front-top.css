@@ -85,6 +85,7 @@ header .wraper-menu-main .menu-main li {
 
 header .wraper-menu-main .menu-main li a {
   display: inline-block;
+  font-weight: bold;
 }
 
 header .col-md-3 {
@@ -111,6 +112,9 @@ header .newletter > * {
   color: white;
 }
 
+header .newletter > svg {
+  margin-right: 5px;
+}
 
 /* FEATURED */
 section.featured {
@@ -119,7 +123,7 @@ section.featured {
   overflow: hidden;
   position: relative;
   z-index: 20;
-  min-height: 700px;
+  min-height: 850px;
   background-position: bottom;
 }
 
@@ -142,10 +146,10 @@ section.featured .fix-big-label {
 }
 
 section.featured h1 {
-  font-size: 82px;
+  font-size: 99px;
   color: white;
-  line-height: 90px;
-  margin: 9% 0 0 0;
+  line-height: 100px;
+  margin: 14% 0 0 6%;
 }
 
 /* NEWS */
@@ -163,21 +167,21 @@ section.news {
 
 section.news .fix-content {
   position: absolute;
-  bottom: -70px;
+  bottom: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 section.news h2 {
-  font-size: 50px;
+  font-size: 36px;
   color: #0dbe84;
 }
 
 section.news h2 span {
-  padding-left: 30px;
-  font-size: 40px;
+  padding-left: 20px;
+  font-size: 20px;
   color: #0dbe84;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'SegoePro', sans-serif;
 }
 
 section.news ul {
@@ -186,22 +190,22 @@ section.news ul {
 }
 
 section.news ul li {
-  padding: 10px 10px 30px 115px;
+  padding: 10px 10px 26px 115px;
   position: relative;
   align-items: center;
-  border-bottom: 2px dotted #7d7d7d;
-  margin-top: 30px;
+  border-bottom: 2px dotted #b1b1b1;
+  margin-top: 26px;
 }
 
 section.news ul li:before {
   content: 'NEWS';
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'SegoePro', sans-serif;
   width: 90px;
-  padding: 7px;
+  padding: 5px;
   background: black;
   position: absolute;
   color: white;
-  top: 0;
+  top: 8px;
   left: 0;
   text-align: center;
 }
@@ -220,20 +224,40 @@ section.services .item-ser {
   padding: 0;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+section.services .item-ser:nth-child(even) .content-sub {
+  padding-right: 300px;
+}
+
+section.services .item-ser:nth-child(odd) .content-sub {
+  padding-left: 300px;
 }
 
 section.services .item-ser img {
   width: 100%;
   object-fit: cover;
   height: 100%;
+  transition: all 950ms ease-in-out;
+  cursor: pointer;
+}
+
+section.services .item-ser img:hover {
+  transition: all 950ms ease-in-out;
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 section.recruit {
   position: relative;
   overflow: hidden;
   z-index: 20;
-  bottom: -238px;
-  margin-top: -238px;
+  bottom: -270px;
+  margin-top: -270px;
 }
 
 section.recruit .bg-r {
@@ -246,12 +270,12 @@ section.recruit .bg-r {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
 
 section.recruit .container-fix {
-  padding-bottom: 80px;
+  padding-bottom: 140px;
 }
 
 .no-bg {
@@ -260,7 +284,7 @@ section.recruit .container-fix {
 
 section.recruit .head-recruit {
   position: relative;
-  min-height: 300px;
+  padding-top: 300px;
   line-height: 40px;
 }
 
@@ -272,12 +296,14 @@ section.recruit .bussiness {
 section.recruit .bussiness h2 {
   font-size: 36px;
   color: white;
+  font-weight: bold;
 }
 
 section.recruit .bussiness h2 span {
   font-size: 20px;
   color: white;
-  padding-left: 30px;
+  padding-left: 20px;
+  font-weight: normal;
 }
 
 section.recruit .bussiness p {
@@ -296,15 +322,36 @@ section.recruit ul li {
   margin-bottom: 10px;
 }
 
+section.recruit ul li .btn-custom {
+  min-width: 263px;
+  position: relative;
+}
+
+section.recruit ul li .btn-custom:before {
+  position: absolute;
+  content: '\f054';
+  font-family: 'Font Awesome\ 5 Free';
+  color: #3ec6b9;
+  top: 15px;
+  right: 15px;
+  font-weight: 900;
+}
+
 /* FOOTER */
 
 footer {
-  background-image: url('../images/footer-black.jpg');
+  background: black;
+  background-image: url('../images/footer-black.png');
   min-height: 494px;
   padding-top: 150px;
   text-align: right;
   position: relative;
   padding-bottom: 60px;
+}
+
+footer.has-clip {
+  clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
+  padding-top:  150px;
 }
 
 footer {
@@ -313,6 +360,7 @@ footer {
 
 footer p, footer a {
   color:  white;
+  font-weight: bold;
 }
 
 footer ul {
@@ -427,9 +475,13 @@ main.content-wrapper {
     min-height: 1200px;
   }
     
-  /* section.recruit .bg-r {
-    background-image: url('../images/footer-black.jpg');
-  } */
+  section.services .item-ser:nth-child(even) .content-sub {
+    padding-right: 0;
+  }
+
+  section.services .item-ser:nth-child(odd) .content-sub {
+    padding-left: 0;
+  }
 
   section.recruit .bussiness {
     padding-top: 0;
@@ -441,7 +493,9 @@ main.content-wrapper {
 }
 
 @media (max-width: 1200px) {
-  
+  section.featured {
+    min-height: 900px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -450,7 +504,7 @@ main.content-wrapper {
   }
 
   section.featured {
-    min-height: 900px;
+    min-height: 600px;
   }
 
   section.featured h1 {
@@ -512,11 +566,11 @@ main.content-wrapper {
   }
 
   section.featured {
-    min-height: 820px;
+    min-height: 520px;
   }
 
   section.featured h1 {
-    font-size: 40px;
+    font-size: 51px;
     line-height: 62px;
     margin: 20% 0 0% 0px;
   }
@@ -528,10 +582,59 @@ main.content-wrapper {
   section.featured ul li {
     padding: 35px 10px 15px 11px;
   }
+
+  section.recruit .bussiness p {
+    padding-top: 25px;
+  }
+
+  section.recruit ul {
+    padding: 25px 0
+  }
 }
 
-@media (max-width: 400px) {
-  
+@media (max-width: 500px) {
+  section.featured {
+    min-height: 420px;
+  }
+
+  section.featured h1 {
+    font-size: 40px;
+  }
+
+  section.news {
+    min-height: 620px;
+  }
+
+  section.news h2 {
+    font-size: 30px;
+  }
+
+  section.news h2 span {
+    padding-left: 15px;
+    font-size: 30px;
+  }
+
+  section.news ul li {
+    padding: 0px 0px 15px 85px;
+    font-size: 1rem !important;
+  }
+
+  section.news ul li:before {
+    width: 80px;
+  }
+
+  section.recruit {
+    bottom: 0;
+    margin-top: 0;
+  }
+
+  section.recruit .bg-r {
+    clip-path: none;
+  }
+
+  footer {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 320px) {

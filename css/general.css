@@ -11,19 +11,36 @@
   gray: #eeeeee;
 */
 
+@font-face {
+  font-family: 'SegoePro';
+  src: url('../fonts/segoe/SegoePro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/segoe/SegoePro.woff') format('woff'),
+  url('../fonts/segoe/SegoePro.ttf')  format('truetype'),
+  url('../fonts/segoe/SegoePro.svg#SegoePro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html, body {
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   font-family: 'Noto Serif JP', serif;
+  scroll-behavior: smooth;
 }
 
 .container {
-  max-width: 1300px; 
+  max-width: 1600px; 
 }
 
 .container-fix {
   max-width: 1000px;
 }
+
+.container-sub-fix {
+  max-width: 996px;
+}
+
 
 a, span, p, strong, input {
   color: black;
@@ -42,19 +59,19 @@ img {
 }
 
 .font-sans {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'SegoePro', sans-serif;
 }
 
 .font-xs {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .font-sm {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .font-xl {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .color-green {
@@ -82,7 +99,8 @@ img {
   left: 50%;
   text-align: center;
   line-height: 32px;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .content-sub p, .content-sub h4 {
@@ -99,11 +117,13 @@ img {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: #0dbe84;
+  background: #3ec6b9;
   border-radius: 50px;
   text-align: center;
-  line-height: 40px;
+  line-height: 35px;
+  margin-top: 15px;
   color: white;
+  font-size: 25px;
 }
 
 .btn-sub:hover {
@@ -129,6 +149,10 @@ img {
   min-width: 160px;
   text-align: center;
 }
+
+.btn-custom:hover {
+  background: black;
+} 
 
 .btn-custom-primary {
   display: inline-block;
