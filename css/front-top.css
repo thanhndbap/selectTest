@@ -114,12 +114,12 @@ header .newletter > * {
 
 /* FEATURED */
 section.featured {
-  background-image: url('../images/top_font.jpg');
+  background-image: url('../images/featured.png');
   width: 100%;
   overflow: hidden;
   position: relative;
   z-index: 20;
-  min-height: 1300px;
+  min-height: 700px;
   background-position: bottom;
 }
 
@@ -134,7 +134,7 @@ section.featured .fix-content {
   transform: translate(-50%, 0%);
 }
 
-section.featured  .fix-big-label {
+section.featured .fix-big-label {
   position: absolute;
   top: 0px;
   left: 50%;
@@ -145,27 +145,47 @@ section.featured h1 {
   font-size: 82px;
   color: white;
   line-height: 90px;
-  margin: 16% 0 10% 0px;
+  margin: 9% 0 0 0;
 }
 
-section.featured h2 {
+/* NEWS */
+
+section.news {
+  background-image: url('../images/bg-news.jpg');
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  min-height: 700px;
+  background-position: bottom;
+  margin-top: -289px;
+}
+
+section.news .fix-content {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.news h2 {
   font-size: 50px;
   color: #0dbe84;
 }
 
-section.featured h2 span {
+section.news h2 span {
   padding-left: 30px;
   font-size: 40px;
   color: #0dbe84;
   font-family: 'Open Sans', sans-serif;
 }
 
-section.featured ul {
+section.news ul {
   display: flex;
   flex-flow: column nowrap;
 }
 
-section.featured ul li {
+section.news ul li {
   padding: 10px 10px 30px 115px;
   position: relative;
   align-items: center;
@@ -173,7 +193,7 @@ section.featured ul li {
   margin-top: 30px;
 }
 
-section.featured ul li:before {
+section.news ul li:before {
   content: 'NEWS';
   font-family: 'Open Sans', sans-serif;
   width: 90px;
@@ -186,7 +206,7 @@ section.featured ul li:before {
   text-align: center;
 }
 
-section.featured ul li a {
+section.news ul li a {
   margin-left: 40px;
 }
 
@@ -212,12 +232,12 @@ section.recruit {
   position: relative;
   overflow: hidden;
   z-index: 20;
-  bottom: -227px;
-  margin-top: -227px;
+  bottom: -238px;
+  margin-top: -238px;
 }
 
 section.recruit .bg-r {
-  background-image: url('../images/bg-services.jpg');
+  background-image: url('../images/services.jpg');
   position: absolute;
   top: 0;
   bottom: 0;
@@ -226,12 +246,12 @@ section.recruit .bg-r {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
 
 section.recruit .container-fix {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .no-bg {
@@ -246,7 +266,7 @@ section.recruit .head-recruit {
 
 section.recruit .bussiness {
   line-height: 32px;
-  padding-top: 200px;
+  padding-top: 120px;
 }
 
 section.recruit .bussiness h2 {
@@ -396,6 +416,11 @@ main.content-wrapper {
 
 
 /* RESPONSIVE */
+@media (min-width: 1850px) {
+  section.recruit .bg-r {
+    background-size: cover;
+  }
+}
 
 @media (max-width: 1350px) {
   section.featured {
@@ -436,10 +461,6 @@ main.content-wrapper {
 
   section.featured h2 {
     font-size: 40px;
-  }
-
-  footer {
-    padding-top: 0;
   }
 }
 
