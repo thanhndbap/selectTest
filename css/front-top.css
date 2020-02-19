@@ -413,7 +413,7 @@ main.content-wrapper {
   color: red;
 }
 
-/* CONTACT SELECT */
+/* COMPANY SELECT */
 
 .contact-select-page-wrapper textarea {
   border: none;
@@ -424,7 +424,7 @@ main.content-wrapper {
   padding-top: 30px;
 }
 
-/* CONTACT SELECT BUSINESS */
+/* BUSINESS SELECT */
 .contact-bussiness-page-wrapper .spacing {
   margin: 15px 0;
 }

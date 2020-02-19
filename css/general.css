@@ -1,7 +1,12 @@
 /*
   Elements In Select Pages
   - Home Page
-  - 
+  - Contact Page
+  - Bussiness Page
+  - Company Page
+  - Greeting Page
+  - Recruit Page
+  - Result Page
 */
 
 /* Colors variables
@@ -20,7 +25,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 
 html, body {
   font-size: 16px;
